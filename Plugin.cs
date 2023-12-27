@@ -61,7 +61,7 @@ namespace TabgLootDumper
                 }
             }
 
-            path = Path.Combine(Paths.GameRootPath, "NormalLootPreset.culp"); // Computerys Ultimate Battle Loot Preset file
+            path = Path.Combine(Paths.GameRootPath, "NormalLootPreset.culp"); // Computerys Ultimate Loot Preset file
             if (File.Exists(path)) { File.Delete(path); }
             using (FileStream fileStream = new FileStream(path, FileMode.Create))
             using (BinaryWriter writer = new BinaryWriter(fileStream))
